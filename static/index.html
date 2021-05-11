@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="all" />
+	<title>webcam 7</title>
+	<link rel="stylesheet" href="css_styles/default.css" media="screen" />
+	<script type="text/javascript">
+	</script>
+	<script type="text/javascript" src="js/mootools-1.2-core.js"></script>
+	<script type="text/javascript" src="js/mootools-1.2-more.js"></script>
+</head>
+<body id="webcamXP-body">
+<div id="container">
+ <div id="fwindowholder"><span style="display:none">.</span></div>
+	<div id="intro">
+		<div id="pageHeader">
+			<h1><span>Innocent Webcam</span></h1>
+			<h2><span>Just normal webcam things. Honest</span></h2>
+		</div>
+		<div class="wxptopnav">
+		  <div class="wxpmenu">
+<span class="btn-start">&nbsp;</span><a class="btn-arrow" href="home.html"><span>Home</span></a><a class="btn-arrow" href="multi.html"><span>Multi view</span></a><a class="btn-arrow" href="mobile.html"><span>Smartphone</span></a><a class="btn-arrow" href="gallery.html"><span>Gallery</span></a><a class="btn-arrow" href="admin.html"><span>Administration</span></a><span class="btn-stop">&nbsp;</span><br/>
+
+		  </div>
+		  <div class="wxplogin">
+Not logged in
+		  </div>
+		</div>
+<div class="wxpcontainer">
+		  <div class="wxpsrcsel">
+	<script type="text/javascript">
+var height_array = new Array();
+var width_array = new Array();
+width_array[1] = 640;
+height_array[1] = 480;
+	function CamSelect()
+	{
+	        var destSrc = document.getElementById("srcSelect").value;
+	        var destMode = document.getElementById("modeSelect").value;
+	        if (destMode == "0"){
+	        currentCamera1 = destSrc;
+	        document.images.webcam1.onload = DoIt1;
+	        document.images.webcam1.onerror = ErrorImage1;
+	        document.images.webcam1.src = "cam_" + currentCamera1 + ".jpg;"
+	        document.images.webcam1.width = width_array[currentCamera1];
+	        document.images.webcam1.height = height_array[currentCamera1];
+          var mydiv = document.getElementById("wxpcamdiv");
+	        if (mydiv != null){
+	        mydiv.style.width = parseInt(width_array[currentCamera1]+5) + "px";
+	        }
+	        if (mydiv == null){alert('div not found');}
+          var myifr = document.getElementById("_iframe-ptz");
+          if (myifr != null) myifr.src = "/ptz.html?src=" + destSrc;
+	        }else{
+	        ModeSelect();
+	        }
+	}
+	function ModeSelect()
+	{
+	        var currentPage = "/";
+	        var destSrc = document.getElementById("srcSelect").value;
+	        var destMode = document.getElementById("modeSelect").value;
+	        parent.location.href = currentPage + "?src=" + destSrc + "&mode=" + destMode;
+	}
+	</script>
+<select id="srcSelect" onchange="CamSelect()">
+  <option SELECTED value="1">Source 1</option>
+</select>&nbsp;
+<select id="modeSelect" onchange="ModeSelect()">
+  <option SELECTED value="0">JavaScript</option>
+  <option value="1">Motion JPEG [Firefox]</option>
+  <option value="2">Flash JPEG Stream</option>
+  <option value="3">Flash FLV Stream</option>
+</select>
+		  </div>
+		  <br />
+		  <div id="wxpcamdiv" class="wxpcamdiv" style="width : 640px">
+		  <div id="wxpdragcam" class="wxpdragme">Live View</div>
+<img src="loading.jpg" class="webcam" id="webcam1" onmousedown="PTZMouseDown1(event)" width="640" height="480" alt="Live Stream" />
+<script type="text/javascript">
+<!--
+currentCamera1= 1;
+errorimg1= 0;
+DoIt1();
+document.images.webcam1.onload = DoIt1();
+document.images.webcam1.onerror = ErrorImage1();
+function LoadImage1()
+{
+        uniq1 = Math.random();
+        document.images.webcam1.src = "cam_" + currentCamera1 + ".jpg?uniq="+uniq1;
+        document.images.webcam1.onload = DoIt1;
+}
+function PTZMouseDown1(e)
+{
+        var IE = document.all?true:false;
+        var x,y;
+        var myx,myy;
+        var myifr = document.getElementById("_iframe-ptz");
+        tp = getElPos1();
+        myx = tp[0];
+        myy = tp[1];
+        if(IE){
+        var scrollX = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft;
+        var scrollY = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
+        x = event.clientX - myx + scrollX;
+        y = event.clientY - myy + scrollY;
+        } else {
+        x = e.pageX - myx;
+        y = e.pageY - myy;
+        }
+        if ((width_array[currentCamera1] != null) && (width_array[currentCamera1] > 0)) x = Math.round((x * 400) / width_array[currentCamera1]);
+        if ((height_array[currentCamera1] != null) && (height_array[currentCamera1] > 0)) y = Math.round((y * 300) / height_array[currentCamera1]);
+        if (x > 400) x = 400;
+        if (y > 300) y = 300;
+        if (myifr != null) myifr.src = "ptz.html?src=" + currentCamera1 + "&moveto_x=" + x + "&moveto_y=" + y +"";
+        return true;
+}
+function getElPos1()
+{
+            el = document.images.webcam1;
+            x = el.offsetLeft;
+            y = el.offsetTop;
+            elp = el.offsetParent;
+            while(elp!=null)
+              { x+=elp.offsetLeft;
+                y+=elp.offsetTop;
+                elp=elp.offsetParent;
+              }
+            return new Array(x,y);
+}
+function ErrorImage1()
+{
+        errorimg1++;
+        if (errorimg1>3){
+              document.images.webcam1.onload = "";
+              document.images.webcam1.onerror = "";
+              document.images.webcam1.src = "offline.jpg";
+              }else{
+                uniq1 = Math.random();
+            document.images.webcam1.src = "cam_" + currentCamera1 + ".jpg?uniq="+uniq1;
+              }
+}
+function DoIt1()
+{
+        errorimg1=0;
+        window.setTimeout("LoadImage1();", 40);
+}
+//-->
+</script>
+		  <script type="text/javascript" language="javascript" charset="utf-8">
+		  // <![CDATA[
+		  new Drag('wxpcamdiv',{
+		  onStart:function(el)
+		  {
+		    el.setOpacity(.5);
+		  },
+		  onComplete:function(el)
+		  {
+		    el.setOpacity(1);
+		  }});
+		  // ]]>
+		  </script>
+		  </div>
+		  <br/>
+		  <div id="wxpptz" class="wxpptz">
+		  <div id="wxpdragptz" class="wxpdragme">Pan, Tilt &amp; Zoom</div>
+<iframe id="_iframe-ptz" width="115" height="120" src="/ptz.html?src=1" frameborder="0" allowtransparency="true" scrolling="no" ></iframe>
+<br/>
+		  </div><br/>
+		  <script type="text/javascript" language="javascript" charset="utf-8">
+		  // <![CDATA[
+		  new Drag('wxpptz',{
+		  onStart:function(el)
+		  {
+		    el.setOpacity(.5);
+		  },
+		  onComplete:function(el)
+		  {
+		    el.setOpacity(1);
+		  }});
+		  // ]]>
+		  </script>
+
+</div><br/>
+	 	<div class="wxpdark">
+	 	   <div class="internal_content">
+			powered by <a href="http://www.webcamxp.com" target="_blank">webcam 7</a> v1.3.3.0
+	 	   </div>
+		</div>
+		<div class="footer">
+			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s XHTML">xhtml</a> &nbsp;
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS">css</a> &nbsp;
+		</div>
+	</div>
+</div>
+</body>
+</html>

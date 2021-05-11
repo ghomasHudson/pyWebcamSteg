@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="all" />
+	<title>webcam 7</title>
+	<link rel="stylesheet" href="css_styles/default.css" media="screen" />
+	<script type="text/javascript">
+	</script>
+	<style type="text/css">
+	@import url(css_styles/milkbox/milkbox.css);/* Milkbox css */
+	</style>
+	<script type="text/javascript" src="js/mootools-1.2-core.js"></script>
+	<script type="text/javascript" src="js/mootools-1.2-more.js"></script>
+	<script type="text/javascript" src="js/milkbox.js"></script>
+</head>
+<body id="webcamXP-body">
+<div id="container">
+ <div id="fwindowholder"><span style="display:none">.</span></div>
+	<div id="intro">
+		<div id="pageHeader">
+			<h1><span>Anchorage Moose Cam</span></h1>
+			<h2><span>Watch for moose in back.</span></h2>
+		</div>
+		<div class="wxptopnav">
+		  <div class="wxpmenu">
+<span class="btn-start">&nbsp;</span><a class="btn-arrow" href="home.html"><span>Home</span></a><a class="btn-arrow" href="multi.html"><span>Multi view</span></a><a class="btn-arrow" href="mobile.html"><span>Smartphone</span></a><a class="btn-arrow" href="gallery.html"><span>Gallery</span></a><a class="btn-arrow" href="admin.html"><span>Administration</span></a><span class="btn-stop">&nbsp;</span><br/>
+
+		  </div>
+		  <div class="wxplogin">
+Not logged in
+		  </div>
+		</div>
+<div class="wxpcontainer">
+page >> <b>1</b>&nbsp;<a href="/gallery.html?page=2">2</a>&nbsp;<a href="/gallery.html?page=3">3</a>&nbsp;<a href="/gallery.html?page=4">4</a>&nbsp;<a href="/gallery.html?page=5">5</a>&nbsp;<a href="/gallery.html?page=6">6</a>&nbsp;&nbsp;...&nbsp;<a href="/gallery.html?page=192">192</a>&nbsp;<table id="gallery"  width="98%"><tr><td><center><a href="/gallery/gallery_1_20160802_092106_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:21:06 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_092106_0.jpp" class="galleryImage"></a></center></td><td><center><a href="/gallery/gallery_1_20160802_092006_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:20:06 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_092006_0.jpp" class="galleryImage"></a></center></td><td><center><a href="/gallery/gallery_1_20160802_091906_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:19:06 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_091906_0.jpp" class="galleryImage"></a></center></td></tr><tr><td><center><a href="/gallery/gallery_1_20160802_091806_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:18:06 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_091806_0.jpp" class="galleryImage"></a></center></td><td><center><a href="/gallery/gallery_1_20160802_091706_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:17:06 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_091706_0.jpp" class="galleryImage"></a></center></td><td><center><a href="/gallery/gallery_1_20160802_091606_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:16:06 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_091606_0.jpp" class="galleryImage"></a></center></td></tr><tr><td><center><a href="/gallery/gallery_1_20160802_091505_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:15:05 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_091505_0.jpp" class="galleryImage"></a></center></td><td><center><a href="/gallery/gallery_1_20160802_091405_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:14:05 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_091405_0.jpp" class="galleryImage"></a></center></td><td><center><a href="/gallery/gallery_1_20160802_091305_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:13:05 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_091305_0.jpp" class="galleryImage"></a></center></td></tr><tr><td><center><a href="/gallery/gallery_1_20160802_091205_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:12:05 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_091205_0.jpp" class="galleryImage"></a></center></td><td><center><a href="/gallery/gallery_1_20160802_091105_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:11:05 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_091105_0.jpp" class="galleryImage"></a></center></td><td><center><a href="/gallery/gallery_1_20160802_091005_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:10:05 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_091005_0.jpp" class="galleryImage"></a></center></td></tr><tr><td><center><a href="/gallery/gallery_1_20160802_090905_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:09:05 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_090905_0.jpp" class="galleryImage"></a></center></td><td><center><a href="/gallery/gallery_1_20160802_090805_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:08:05 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_090805_0.jpp" class="galleryImage"></a></center></td><td><center><a href="/gallery/gallery_1_20160802_090705_0.jpg" rel="milkbox[wxp]" title="Captured on 02-Aug-16 9:07:05 AM from source #1" class="galleryLink"><img src="/gallery/gallery_1_20160802_090705_0.jpp" class="galleryImage"></a></center></td></tr></table>
+</div><br/>
+	 	<div class="wxpdark">
+	 	   <div class="internal_content">
+			powered by <a href="http://www.webcamxp.com" target="_blank">webcam 7</a> v1.3.3.0
+	 	   </div>
+		</div>
+		<div class="footer">
+			<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s XHTML">xhtml</a> &nbsp;
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS">css</a> &nbsp;
+		</div>
+	</div>
+</div>
+</body>
+</html>

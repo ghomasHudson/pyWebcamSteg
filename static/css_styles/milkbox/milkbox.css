@@ -1,0 +1,124 @@
+/* MILKBOX */
+
+*{ margin:0; padding:0; }
+
+.spacer{ clear:both; margin:0; padding:0; height:0; font-size:0; overflow:hidden; }
+
+p{ padding:0px; margin:0px 0px 10px 0px; }
+h1,h2,h3,h4{  margin:0px 0px 10px 0px; padding:0px;  font-weight:bold; }
+h2,h3,h4{ font-size: 10px; }
+h1{ font-size: 12px; }
+
+
+.bold, .redBold, .bold13, .pinkBold, .lightGreyBold, .whiteBold,.orangeBold{ font-weight:bold; }
+.bold12{ font-size:13px; }
+.lightGrey,.lightGreyBold{ color:#999; }
+.orange,.orangeBold{ color:#FF5400; }
+.white,.whiteBold{ color:#fff; }
+.pink,.pinkBold{ color:#CC9F9F; }
+.red, .redBold{ color:#C10000; }
+.italic,.italic10{  font-style:italic; }
+.italic10{ font-size:10px; }
+
+a{ color:#252525;  text-decoration:none; outline:none; }
+a:hover{ color:#363636; }
+
+.leftImage, .rightImage{ border-color:#fff; border-style:solid; }
+.leftImage, .left{ float:left; }
+.rightImage, .right{ float:right; }
+
+.noborder{ border-bottom:none; }
+
+
+#mbOverlay {
+	position: absolute;
+	left: 0;
+	width:100%;
+	background-color: #fff; /* set the Milkbox overlay color // opacity: see the js options */
+	z-index:100;
+	cursor: pointer;
+}
+
+#mbCenter {
+	/* for default width and height, see the js options */
+	position: absolute;
+	z-index:101;
+	overflow:hidden;
+	left: 50%;
+	top:10%;/* overwritten in the js options to properly position the milkbox when activated in a scrolled window */
+	background-color: #fff;/* set the Milkbox background color */
+	border: 7px solid #111;/* set the Milkbox border */
+	margin:0; padding:5px;
+}
+
+.mbLoading{ background: #fff url(loading.gif) no-repeat center; }/* IMAGE: loading gif */
+
+#mbImage{ margin:0; padding:0; height:0; border:none; font-size:0; overflow:hidden; }
+
+.clear{ clear:both; height:0; margin:0; padding:0; font-size:0; overflow:hidden; }
+
+
+/* *** BOTTOM *** */
+
+#mbBottom { 
+	/* set text options */
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666;
+	line-height: 1.4em;
+	text-align: left;
+	padding-top:8px;
+	margin:0;
+}
+
+/* navigation */
+/* be careful if you change buttons dimensions */
+
+#mbNavigation{
+	float:right;
+	width:27px;
+	padding-top:3px;
+	border-left:1px solid #000;/* set nav border */
+}
+
+
+#mbCount{ 
+	width:55px; 
+	overflow:hidden;
+	padding-top:1px;
+	float:right;
+	text-align:right;
+	font-size:9px; /* count font size */
+}
+
+#mbCloseLink, #mbPrevLink, #mbNextLink{
+	outline:none;
+	display:block;
+	float:right;
+	height:20px;
+	cursor: pointer;
+}
+
+
+#mbPrevLink, #mbNextLink{ width:17px; }
+#mbPrevLink{ background: transparent url(prev.gif) no-repeat; }/* IMAGE: prev */
+#mbNextLink{ background: transparent url(next.gif) no-repeat; }/* IMAGE: next */
+
+/* NOTE: doesn't work in ie6, so, just see the js options :) */
+a#mbPrevLink:hover,a#mbNextLink:hover,a#mbCloseLink:hover { background-position: 0 -23px; }
+
+#mbCloseLink {
+	width:20px;
+	background: transparent url(close.gif) no-repeat;/* IMAGE: close */
+}
+
+/* description */
+
+#mbDescription{
+	margin-right:27px;
+	padding:0px 10px 0 0;
+	min-height:23px;
+	font-weight: normal;
+	text-align:justify;
+}
+

@@ -1,0 +1,451 @@
+/* webcamXP CSS Style by wet */
+/* default for objects... */
+
+body { 
+	color: #222222; 
+	background-color: #ffffff;
+	background-image:url(background.gif);
+	background-position: top center;
+	background-repeat: repeat-y;
+	font-size: 12px; 
+	line-height: 14px;
+	font-family: Tahoma, Verdana, Arial; 
+	text-align: left;
+  margin: 0px; 
+	padding: 0px;
+	}
+
+
+h1, h2, h3 {
+	font-size: 12px; 
+	line-height: 14px;
+	font-weight: bold; 
+	font-family: Tahoma, Verdana, Arial; 
+	text-align: left; 
+	margin: 0px; 
+	padding: 0px;
+	}
+
+
+img   {
+	border : 0;
+      }	
+
+table {
+	border: 0;
+	font-size: 12px; 
+	line-height: 14px;
+	font-weight: bold; 
+	font-family: Tahoma, Verdana, Arial; 
+	text-align: left; 
+	margin: 2px; 
+	padding: 2px;
+      }
+	
+select, input {
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 8pt;
+  	font-style: normal;
+  	font-weight: normal;
+}
+
+
+a:link,
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #999999;
+	}
+
+
+a:hover, 
+a:active,
+a:visited:hover
+	{ 
+	text-decoration: underline; 
+	color: #999999;
+	}
+
+
+.galleryImage   {
+	border : 2px solid black;
+	margin-bottom : 10px;
+      }	
+
+
+.datatable {
+	width: 100%;
+	border: 1px solid gray;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: bold; 
+	font-family: Tahoma, Verdana, Arial; 
+	text-align: left; 
+	margin: 2px; 
+	padding: 0px;
+      }
+
+.datatable.tr {
+	border: 1px solid gray;
+	padding: 5px;
+      }
+
+.data1strow {		
+	     background-color : silver;	
+	    }
+
+
+/* major divs */
+#container { 
+	width: 790px; 
+	position: relative;   
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	}
+
+#intro {
+ 	width: 790px;
+	margin: 0px 0px 0px 0px; 
+	padding: 0px 0px 0px 0px;
+	}
+
+.bodyiFrame { 	
+	border: 1px solid silver;
+	}
+
+/* minor divs */
+#pageHeader {
+ 	width: 790px;
+ 	height: 0px; /* strange but ie6 needs this */
+ 	background-image: url(title.jpg);
+	background-position: top center;
+	background-repeat: repeat-x;
+	border-top: 0px;    
+	border-right: 1px solid #aaa;    
+	border-bottom: 1px solid #aaa;    
+	border-left: 1px solid #aaa;    
+	margin: 0px 0px 0px 0px; 
+	padding: 80px 0px 0px 0px;
+	}
+	
+#pageHeader h1 {
+ 	width: 700px;
+	color: #fff;
+	font-size: 24px; 
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin:  -50px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+	}
+	
+#pageHeader h2 {
+ 	width: 700px;
+	color: #fff;
+	font-size: 11px; 
+	line-height: 16px;
+	font-weight: normal;
+	padding: 0px 0px 0px 3px;
+	text-transform: uppercase;
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 10px 4px;
+	}
+		
+
+
+.internal_content
+	{
+	text-align: justify;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 5px;
+	}
+
+	
+	
+.wxpdark {
+ 	width: 790px;
+ 	background-image: url(color.gif);
+	background-position: top left;
+	background-repeat: repeat;
+	background-color: #fff;
+	border: 1px solid #aaa;    
+	margin: 10px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	color: white;
+	}
+	
+.wxpdark .internal_content
+	{
+	color: white;
+	font-weight: bold; 
+	font-family: Tahoma, Verdana, Arial; 
+	text-align: center;
+	text-transform: uppercase;
+	}
+
+.webcam_in_frame
+	{
+	border: 0px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	}
+	
+
+.centered
+	{
+	width: 100%;
+	text-align: center;
+	}
+
+
+.multicamcontainer {
+
+	background-color: #fff;	
+	border: 0px solid #aaa;    
+	
+	width: 680px;
+	/*height: 480px;*/
+	position: relative;
+	/*float:left;*/
+
+	/*margin: 10px 10px 10px 10px;*/
+	margin-top:0px;
+	/* top right bottom left */
+	padding: 10px 10px 10px 50px;
+
+	}
+		
+.wxptopnav {
+
+	background-color: #fff;	
+	border: 1px solid #aaa;    
+	
+	width: 788px;
+	height: 35px;
+	/*height: 480px;*/
+	position: relative;
+	/*float:left;*/
+
+	/*margin: 10px 10px 10px 10px;*/
+	margin-top:10px;
+	padding: 2px 0px 0px 2px;
+
+	}
+
+.wxpmenu {
+  /*border: solid 1px red;*/
+	
+	width: 520px;
+	height: 32px;
+	float:left;	
+	
+	}
+	
+.wxplogin {
+  /*border: solid 1px orange;*/	
+  
+  float:right;
+  text-align:right;
+  
+  width:250px;
+  height: 25px;
+  
+  padding-top : 8px;
+  padding-right : 5px;
+  
+	}	
+	
+.wxpsrcsel {
+  
+  /*border: solid 1px red;*/
+	width: 250px;
+
+	}
+	
+.wxpptz {
+
+  border: solid 1px silver;  
+  background-color: #ffffff;
+  
+  z-index: 999;
+  float: left;
+  
+  position: absolute;
+  left : 660px;
+  top : 42px;
+
+  text-align:center;
+  width:120px;
+  height:145px;
+  }	
+  
+.wxpcamdiv {
+
+  position: relative;
+  left : 0px;
+  top : 0px;
+  
+  /*padding-top : 10px;*/
+  /*margin-top : 10px;*/
+  
+  text-align:center;
+  border: solid 1px silver;  
+  background-color: #ffffff;  
+  z-index: 998;
+	
+  }	
+	
+.wxpdragme {
+  font-family : Verdana,Tahoma,Arial;
+	font-weight : normal;
+	font-size : 8pt;
+  
+  padding-top: 2px;
+  		
+	color: #dedede;
+	
+	height: 18px;
+	
+  background: #1a5575 url(dragWindow.jpg) top center repeat-x;
+	
+  margin-bottom: 3px;
+  cursor: pointer;
+	}	
+	
+.wxpcontainer {
+  background-color: #fff;	
+	border: solid 1px #aaa;    
+	
+	width: 770px;
+	/*height: 480px;*/
+	position: relative;
+	clear: right;
+	/*float:left;*/
+
+	/*margin: 10px 10px 10px 10px;*/
+	margin-top:10px;
+	padding: 10px 10px 10px 10px;
+	/*text-align: center;*/
+
+	}
+	
+/* image*/
+.webcam
+	{
+	margin-top: 0px;
+	border: 1px solid #aaa; 
+	padding: 1px 1px 1px 1px; 
+	}		
+	
+	
+/* frame */
+.livecam
+	{
+	border: 0; 	
+	}
+	
+
+.wxpminicontainer {
+
+	background-color: #fff;	
+	border: 0;    
+	
+	width: 324px;
+	height : 244px;
+	
+	position: relative;
+	float:left;
+	
+	/*margin: 10px 10px 10px 10px;*/
+	margin-top:0px;
+	padding: 0px 0px 0px 0px;
+
+	}	
+
+	
+.footer {
+ 	width: 790px;
+	border: 1px solid #aaa;    
+ 	background-image: url(gray.gif);
+	background-position: center left;
+	background-repeat: repeat;
+	background-color: #dddddd;;	
+	margin: 10px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	}
+
+
+br.endofline
+{
+clear: both;
+
+}
+
+.btn-start
+{
+	height: 32px;
+	width: 4px;
+  background: url(../menu/vLeft.jpg) top left no-repeat;
+  float: left;	
+}
+
+.btn-stop
+{
+	height: 32px;
+  width: 4px;
+  background: url(../menu/vRight.jpg) top left no-repeat;
+  float: left;	
+}
+
+a.btn-arrow , a:visited.btn-arrow
+{
+	
+  font-family : Verdana,Tahoma,Arial;
+	font-weight : normal;
+	font-size : 8pt;
+  		
+	color: #dedede;
+	
+	background-color : #1a5575;
+	background: url(../menu/vBtn.jpg) top left repeat-x;
+	text-decoration: none; 
+	
+	float: left; 
+	margin: 0px 0px 0px 0px; 
+	width: 100px;
+}
+	
+a.btn-arrow span { 
+	display: block;	
+	background: #1a5575 url(../menu/vBtn.jpg) top repeat-x;	
+	margin-left: 5px;
+  text-align: center;
+  
+	line-height: 28px;
+	height: 32px;
+	
+	cursor: pointer;
+}
+
+
+a:hover.btn-arrow
+{
+	text-decoration: none;	
+	background: #1a5575 url(../menu/vLeftHover.jpg) top left no-repeat;
+	color: #ffffff; 
+}
+	
+a:hover.btn-arrow span
+{
+	background: url(../menu/vRightHover.jpg) top right no-repeat;
+}
+
+br .stopfloat
+{
+	clear: right;
+}

@@ -1,0 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-generator" content="webcamXP.Lite" />
+<link href="css_styles/default.css" rel="styleSheet" type="text/css" />
+</head>
+<body class="bodyiFrame">
+<font face="verdana">
+<center><table width="100" bgcolor="#efefef"><tr><td><center><a href="/ptz?zoom=-1&amp;src=1"><img alt="Zoom-" src="im_ptz_minus.gif" border="0" /></a></center></td><td><center><a href="/ptz?movey=1&amp;src=1"><img alt="Up"  src="im_ptz_up.gif" border="0" /></a></center></td><td><center><a href="/ptz?zoom=1&amp;src=1"><img alt="Zoom+" src="im_ptz_plus.gif" border="0" /></a></center></td></tr><tr><td><center><a href="/ptz?movex=-1&amp;src=1"><img alt="Left" src="im_ptz_left.gif" border="0" /></a></center></td><td align="center">1</td><td><center><a href="/ptz?movex=1&amp;src=1"><img alt="Right" src="im_ptz_right.gif" border="0" /></a></center></td></tr><tr><td></td><td><center><a href="/ptz?movey=-1&amp;src=1"><img alt="Down" src="im_ptz_down.gif" border="0" /></a></center></td><td></td></tr></table></center></font></body></html>
