@@ -1,7 +1,7 @@
 # pyWebcamSteg
 *An annoymising proxy through your webcam*
 ---
-![Information flow in system](/informationFlow.png)
+![Information flow in system](https://user-images.githubusercontent.com/13795113/117875701-638fac80-b29a-11eb-9600-2785fc7916e8.png)
 ## How it works
 The system works by encoding and encrypting your request in your webcam feed (this can be a pre-recorded video sequence to preserve your anonymity). This is then sent to a proxy server, before being encoded inside the proxy server's webcam streams which your client will then access before decoding and displaying the webpage.
 
